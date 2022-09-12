@@ -74,22 +74,22 @@ methods:{
 
 @font-face {
   font-family: anime;
-  src: url("Milky Coffee.woff2");
+  src: url("/Milky Coffee.woff2");
 }
 
 @font-face {
   font-family: jp;
-  src: url("HIROMISAKE.woff2");
+  src: url("/HIROMISAKE.woff2");
 }
 
 @font-face {
   font-family: dev;
-  src: url("Homemade Sausage.woff2");
+  src: url("/Homemade Sausage.woff2");
 }
 
 @font-face {
   font-family: kb;
-  src: url("Where My Keys.woff2");
+  src: url("/Where My Keys.woff2");
 }
 
 #intro {
@@ -107,7 +107,7 @@ body {
 }
 
 footer {
-  background-image: url(footer.gif);
+  background-image: url(/footer.gif);
   width: 100vw;
   height: 40vh;
   background-color: black;
@@ -156,7 +156,7 @@ footer {
   margin-block: 5%;
   min-width: 60vw;
   background-color: var(--bg-color);
-  background-image: url(bg.gif);
+  background-image: url(/bg.gif);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -202,7 +202,7 @@ footer {
   }
 
   #wia {
-    background-image: url(bgmobile.gif);
+    background-image: url(/bgmobile.gif);
     background-size: cover;
     width: 100vw;
     padding-block: 40%;
