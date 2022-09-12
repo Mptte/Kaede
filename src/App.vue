@@ -34,7 +34,7 @@
     <Card
       title="Lakeside - Nuxt.js"
       imageUrl="lakeside.png"
-      paragraph="My first time trying out a full scale app development framework.
+      paragraph="My first time using a full scale app development framework.
       This project is still very incomplete but it was fun messing around with props and 360° views with three.js"
     ></Card>
     <Card
@@ -47,7 +47,7 @@
 </template>
 
 <script lang="js">
-import Card from './components/Card.vue'
+import Card from './components/CardItem.vue'
 export default {
   components:{
     Card
@@ -65,13 +65,12 @@ methods:{
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap");
 :root {
   --bg-color: white;
   --secondary-color: black;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap");
 
 @font-face {
   font-family: anime;
@@ -177,10 +176,6 @@ footer {
 ::-webkit-scrollbar:horizontal {
   width: 0px;
   height: 0px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
 }
 
 ::-webkit-scrollbar-thumb {
