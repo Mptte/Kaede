@@ -21,7 +21,7 @@
     <font style="font-family: kb">MECHANICAL KEYBOARDS</font> and computers.<br />
     <div style="display: flex; justify-content: center; align-items: center">
       <div class="stacked">I enjoy playing volleyball</div>
-      <img src="vb.png" style="width: 2ch; height: 2ch; margin: 0" />
+      <img src="/vb.png" style="width: 2ch; height: 2ch; margin: 0" />
       <div class="stacked">, Genshin Impact and Minecraft</div>
     </div>
 
@@ -36,24 +36,27 @@
     <div class="www">
       <div class="stacked">
         Python<img
-          src="py.png"
+          src="/py.png"
           style="width: 2ch; margin: 0; align-self: center"
         />
       </div>
       <div class="stacked">
         Javascript
-        <img src="js.png" style="width: 2ch; margin: 0" />
+        <img src="/js.png" style="width: 2ch; margin: 0" />
       </div>
 
       <div class="stacked">
-        Vue.js<img src="vue.png" style="width: 2ch; margin: 0" />
+        Vue.js<img src="/vue.png" style="width: 2ch; margin: 0" />
       </div>
 
       <div class="stacked">
-        Nuxt.js<img src="nuxt.png" style="width: 2ch; height: 2ch; margin: 0" />
+        Nuxt.js<img
+          src="/nuxt.png"
+          style="width: 2ch; height: 2ch; margin: 0"
+        />
       </div>
       <div class="stacked">
-        Svelte<img src="svelte.png" style="width: 2ch; margin: 0" />
+        Svelte<img src="/svelte.png" style="width: 2ch; margin: 0" />
       </div>
     </div>
   </div>
