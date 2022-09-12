@@ -74,22 +74,22 @@ methods:{
 
 @font-face {
   font-family: anime;
-  src: url("Milky Coffee.ttf");
+  src: url("Milky Coffee.woff2");
 }
 
 @font-face {
   font-family: jp;
-  src: url("HIROMISAKE.ttf");
+  src: url("HIROMISAKE.woff2");
 }
 
 @font-face {
   font-family: dev;
-  src: url("Homemade Sausage.ttf");
+  src: url("Homemade Sausage.woff2");
 }
 
 @font-face {
   font-family: kb;
-  src: url("Where My Keys.otf");
+  src: url("Where My Keys.woff2");
 }
 
 #intro {
