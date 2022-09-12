@@ -1,13 +1,14 @@
 <template>
   <div id="heading-wrapper">
     <div id="heading">
-      <div id="normalText" style="color: azure">Hi, I'm&nbsp;</div>
+      <div id="normalText" style="color: var(--bg-color)">Hi, I'm&nbsp;</div>
       <div ref="gradientText" id="gradient"><b>Kaede Makino</b></div>
     </div>
   </div>
 
   <div id="wia">
     <ul id="items">
+      <li style="font-family: dev">I'm a</li>
       <li style="font-family: 'Josefin Sans', sans-serif">student,</li>
       <li style="font-family: dev">anime lover,</li>
       <font style="font-family: jp">japanese enthusiast</font
@@ -16,15 +17,59 @@
       <li style="font-family: dev">& aspriring front-end dev</li>
     </ul>
   </div>
+  <div id="intro">WOOp</div>
+  <div
+    id=""
+    style="
+      font-size: 3rem;
+      padding-block: 1ch;
+      font-family: dev;
+      color: var(--secondary-color);
+      text-align: center;
+    "
+  >
+    <u> My projects </u>
+  </div>
+  <div id="project-wrapper">
+    <Card
+      title="Lakeside - Nuxt.js"
+      imageUrl="lakeside.png"
+      paragraph="My first time trying out a full scale app development framework.
+      This project is still very incomplete but it was fun messing around with props and 360° views with three.js"
+    ></Card>
+    <Card
+      title="Kaede- Vue.js"
+      imageUrl="kaede.png"
+      paragraph="Made with vue.js and lots of love. My first real attempt at making a portfolio website"
+    ></Card>
+  </div>
+  <footer></footer>
 </template>
 
 <script lang="js">
+import Card from './components/Card.vue'
 export default {
+  components:{
+    Card
+},
+methods:{
+  darkMode(){
+    document.documentElement.style.setProperty('--bg-color', 'black')
+    document.documentElement.style.setProperty('--secondary-color', 'white')
+
+  }
+}
+
 
 };
 </script>
 
 <style>
+:root {
+  --bg-color: white;
+  --secondary-color: black;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap");
 
@@ -47,9 +92,34 @@ export default {
   font-family: kb;
   src: url("Where My Keys.otf");
 }
+
+#intro {
+  text-align: center;
+  font-size: 3vh;
+  font-family: "Josefin Sans", sans-serif;
+  word-wrap: break-word;
+  max-width: 100vw;
+  margin: 2ch;
+}
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--background-color);
+}
+
+footer {
+  background-image: url(footer.gif);
+  width: 100vw;
+  height: 40vh;
+  background-color: black;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#project-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 #heading {
@@ -76,16 +146,19 @@ body {
 #heading-wrapper {
   display: flex;
   margin: 0;
-  background-color: #000000;
+  background-color: var(--secondary-color);
   padding-block: 1%;
 }
 
 #wia {
   display: table; /* Allow the centering to work */
   margin: 0 auto;
-  padding-block: 1%;
-  background-color: #ffffff;
-  width: 100vw;
+  padding-block: 10%;
+  min-width: 60vw;
+  background-color: var(--bg-color);
+  background-image: url(bg.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #items {
@@ -104,6 +177,16 @@ body {
     flex-direction: column;
     height: 100vmax;
     padding-block: 0vh;
+  }
+
+  #project-wrapper {
+    flex-direction: column;
+  }
+
+  #wia {
+    background-image: url(bgmobile.gif);
+    background-size: cover;
+    width: 100vw;
   }
 }
 </style>
