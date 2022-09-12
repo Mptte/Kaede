@@ -8,7 +8,6 @@
 
   <div id="wia">
     <ul id="items">
-      <li style="font-family: dev">I'm a</li>
       <li style="font-family: 'Josefin Sans', sans-serif">student,</li>
       <li style="font-family: dev">anime lover,</li>
       <font style="font-family: jp">japanese enthusiast</font
@@ -17,7 +16,47 @@
       <li style="font-family: dev">& aspriring front-end dev</li>
     </ul>
   </div>
-  <div id="intro">WOOp</div>
+  <div id="intro">
+    I spend my time tinkering around with
+    <font style="font-family: kb">MECHANICAL KEYBOARDS</font> and computers.<br />
+    <div style="display: flex; justify-content: center; align-items: center">
+      <div class="stacked">I enjoy playing volleyball</div>
+      <img src="vb.png" style="width: 2ch; height: 2ch; margin: 0" />
+      <div class="stacked">, Genshin Impact and Minecraft</div>
+    </div>
+
+    You can look through my favourite anime & manga on my
+    <a href="https://anilist.co/user/Fuyunoai/"><u>Anilist</u></a>
+    <br />
+    Most of my code lives on my
+    <a href="https://github.com/Mptte"><u>Github</u></a>
+
+    <br />
+    I've worked with
+    <div class="www">
+      <div class="stacked">
+        Python<img
+          src="py.png"
+          style="width: 2ch; margin: 0; align-self: center"
+        />
+      </div>
+      <div class="stacked">
+        Javascript
+        <img src="js.png" style="width: 2ch; margin: 0" />
+      </div>
+
+      <div class="stacked">
+        Vue.js<img src="vue.png" style="width: 2ch; margin: 0" />
+      </div>
+
+      <div class="stacked">
+        Nuxt.js<img src="nuxt.png" style="width: 2ch; height: 2ch; margin: 0" />
+      </div>
+      <div class="stacked">
+        Svelte<img src="svelte.png" style="width: 2ch; margin: 0" />
+      </div>
+    </div>
+  </div>
   <div
     id=""
     style="
@@ -34,12 +73,14 @@
     <Card
       title="Lakeside - Nuxt.js"
       imageUrl="lakeside.png"
+      ghUrl="https://github.com/Mptte/Lake-Side"
       paragraph="My first time using a full scale app development framework.
       This project is still very incomplete but it was fun messing around with props and 360° views with three.js"
     ></Card>
     <Card
       title="Kaede- Vue.js"
       imageUrl="kaede.png"
+      ghUrl="https://github.com/Mptte/kaede"
       paragraph="Made with vue.js and lots of love. My first real attempt at making a portfolio website"
     ></Card>
   </div>
@@ -72,6 +113,19 @@ methods:{
   --secondary-color: black;
 }
 
+.stacked {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  padding-block: 0.5ch;
+  padding: 1ch;
+}
+
+.www {
+  display: flex;
+  justify-content: center;
+}
+
 @font-face {
   font-family: anime;
   src: url("/Milky Coffee.woff2");
@@ -89,7 +143,7 @@ methods:{
 
 @font-face {
   font-family: kb;
-  src: url("/Where My Keys.woff2");
+  src: url("/Where My Keys.otf");
 }
 
 #intro {
@@ -206,6 +260,10 @@ footer {
     background-size: cover;
     width: 100vw;
     padding-block: 40%;
+  }
+
+  .www {
+    display: grid;
   }
 }
 </style>
