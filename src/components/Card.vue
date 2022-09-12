@@ -46,7 +46,6 @@ export default defineComponent({
 .header-text {
   text-align: center;
   font-family: "Ister", sans-serif;
-  margin: 01ch;
 }
 .paragraph {
   font-family: "Roboto Flex", sans-serif;
@@ -67,6 +66,11 @@ export default defineComponent({
 
   .card {
     align-self: center;
+  }
+
+  .image {
+    aspect-ratio: 16/9;
+    max-width: 100vw;
   }
 }
 </style>

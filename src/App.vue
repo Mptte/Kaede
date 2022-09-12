@@ -153,7 +153,8 @@ footer {
 #wia {
   display: table; /* Allow the centering to work */
   margin: 0 auto;
-  padding-block: 10%;
+  padding-block: 7%;
+  margin-block: 5%;
   min-width: 60vw;
   background-color: var(--bg-color);
   background-image: url(bg.gif);
@@ -168,6 +169,28 @@ footer {
   text-align: center;
   padding: 0;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar:horizontal {
+  width: 0px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #89c4c2, #d0ebc5, #f5a2a2, #bc789e);
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 3px;
+}
+
 @media only screen and (max-width: 600px) {
   #heading-wrapper {
     flex-direction: column;
@@ -187,6 +210,7 @@ footer {
     background-image: url(bgmobile.gif);
     background-size: cover;
     width: 100vw;
+    padding-block: 40%;
   }
 }
 </style>
