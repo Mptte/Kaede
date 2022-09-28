@@ -1,6 +1,6 @@
 <template>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <a :href="ghUrl">
+  <a :href="ghUrl" target="new">
     <div class="card">
       <div class="text">
         <img class="image" :src="imageUrl" alt="image" />
@@ -29,6 +29,7 @@ export default defineComponent({
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400&family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap");
 
 a:link {
   text-decoration: none;
@@ -55,6 +56,7 @@ a:active {
   margin: 2ch;
   max-width: min-content;
   box-shadow: #0000000a 3px 3px 3px 3px;
+  background-color: white;
 }
 .card:hover {
   transform: translateY(-4px);
@@ -67,7 +69,7 @@ a:active {
 }
 .header-text {
   text-align: center;
-  font-family: "Ister", sans-serif;
+  font-family: Josefin Sans, sans-serif;
 }
 .paragraph {
   font-family: "Ister", sans-serif;

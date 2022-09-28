@@ -5,17 +5,18 @@
       <div ref="gradientText" id="gradient"><b>Kaede Makino</b></div>
     </div>
   </div>
-
-  <div id="wia">
-    <ul id="items">
-      <li style="font-family: 'Josefin Sans', sans-serif">student,</li>
-      <li style="font-family: dev">anime lover,</li>
-      <font style="font-family: jp">japanese enthusiast</font
-      ><br />
-
-      <li style="font-family: dev">& aspriring front-end dev</li>
-    </ul>
-  </div>
+  <WiaItem1></WiaItem1>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1080 320"
+    style="drop-shadow: 4px 4px"
+  >
+    <path
+      fill="#000000"
+      fill-opacity="1"
+      d="M0,96L21.8,90.7C43.6,85,87,75,131,96C174.5,117,218,171,262,176C305.5,181,349,139,393,144C436.4,149,480,203,524,218.7C567.3,235,611,213,655,192C698.2,171,742,149,785,138.7C829.1,128,873,128,916,133.3C960,139,1004,149,1047,144C1090.9,139,1135,117,1178,144C1221.8,171,1265,245,1309,240C1352.7,235,1396,149,1418,106.7L1440,64L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"
+    ></path>
+  </svg>
   <div id="intro">
     I spend my time tinkering around with
     <font style="font-family: kb">MECHANICAL KEYBOARDS</font> and computers.<br />
@@ -32,31 +33,31 @@
     <a href="https://github.com/Mptte"><u>Github</u></a>
 
     <br />
-    I've worked with
+    I primarily use
     <div class="www">
       <div class="stacked">
         Python<img
-          src="/py.png"
+          src="icons/py.png"
           style="width: 2ch; margin: 0; align-self: center"
         />
       </div>
       <div class="stacked">
         Javascript
-        <img src="/js.png" style="width: 2ch; margin: 0" />
+        <img src="icons//js.png" style="width: 2ch; margin: 0" />
       </div>
 
       <div class="stacked">
-        Vue.js<img src="/vue.png" style="width: 2ch; margin: 0" />
+        Vue.js<img src="icons//vue.png" style="width: 2ch; margin: 0" />
       </div>
 
       <div class="stacked">
         Nuxt.js<img
-          src="/nuxt.png"
+          src="icons//nuxt.png"
           style="width: 2ch; height: 2ch; margin: 0"
         />
       </div>
       <div class="stacked">
-        Svelte<img src="/svelte.png" style="width: 2ch; margin: 0" />
+        Svelte<img src="icons//svelte.png" style="width: 2ch; margin: 0" />
       </div>
     </div>
   </div>
@@ -65,7 +66,8 @@
     style="
       font-size: 3rem;
       padding-block: 1ch;
-      font-family: dev;
+      font-family: Josefin Sans, sans-serif;
+
       color: var(--secondary-color);
       text-align: center;
     "
@@ -75,16 +77,16 @@
   <div id="project-wrapper">
     <Card
       title="Lakeside - Nuxt.js"
-      imageUrl="lakeside.png"
+      imageUrl="assets/lakeside.png"
       ghUrl="https://github.com/Mptte/Lake-Side"
       paragraph="My first time using a full scale app development framework.
       This project is still very incomplete but it was fun messing around with props and 360° views with three.js"
     ></Card>
     <Card
       title="Kaede- Vue.js"
-      imageUrl="kaede.png"
+      imageUrl="assets/kaede.png"
       ghUrl="https://github.com/Mptte/kaede"
-      paragraph="Made with vue.js and lots of love. My first real attempt at making a portfolio website"
+      paragraph="Made with Vue.js and lots of love. My first real attempt at making a portfolio website"
     ></Card>
   </div>
   <footer></footer>
@@ -92,9 +94,13 @@
 
 <script lang="js">
 import Card from './components/CardItem.vue'
+import WiaItem1 from './components/WiaItem.vue';
+import TerminalMac1 from './components/TerminalMac.vue';
 export default {
   components:{
-    Card
+    Card,
+    TerminalMac1,
+    WiaItem1
 },
 methods:{
   darkMode(){
@@ -130,41 +136,26 @@ methods:{
 }
 
 @font-face {
-  font-family: anime;
-  src: url("/Milky Coffee.woff2");
-}
-
-@font-face {
-  font-family: jp;
-  src: url("/HIROMISAKE.woff2");
-}
-
-@font-face {
   font-family: dev;
-  src: url("/Homemade Sausage.woff2");
-}
-
-@font-face {
-  font-family: kb;
-  src: url("/Where My Keys.otf");
+  src: url("fonts/Homemade Sausage.woff2");
 }
 
 #intro {
   text-align: center;
-  font-size: 3vh;
+  font-size: 2rem;
   font-family: "Josefin Sans", sans-serif;
   word-wrap: break-word;
   max-width: 100vw;
-  margin: 2ch;
+  padding: 2ch;
 }
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--background-color);
+  background: #89c4c2;
 }
 
 footer {
-  background-image: url(/footer.gif);
+  background-image: url(assets/footer.gif);
   width: 100vw;
   height: 40vh;
   background-color: black;
@@ -176,12 +167,13 @@ footer {
 #project-wrapper {
   display: flex;
   justify-content: center;
+  align-content: center;
 }
 
 #heading {
   margin: 0;
   padding: 0;
-  padding-block: 3vh;
+  padding-top: 3vh;
   width: 100vw;
   font-size: 400%;
   font-family: "Inter", sans-serif;
@@ -203,27 +195,7 @@ footer {
   display: flex;
   margin: 0;
   background-color: var(--secondary-color);
-  padding-block: 1%;
-}
-
-#wia {
-  display: table; /* Allow the centering to work */
-  margin: 0 auto;
-  padding-block: 7%;
-  margin-block: 5%;
-  min-width: 60vw;
-  background-color: var(--bg-color);
-  background-image: url(/bg.gif);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-#items {
-  list-style: none;
-  justify-self: center;
-  font-size: 5vh;
-  text-align: center;
-  padding: 0;
+  padding-top: 1%;
 }
 
 ::-webkit-scrollbar {
@@ -259,7 +231,7 @@ footer {
   }
 
   #wia {
-    background-image: url(/bgmobile.gif);
+    background-image: url(assets/bgmobile.gif);
     background-size: cover;
     width: 100vw;
     padding-block: 40%;
