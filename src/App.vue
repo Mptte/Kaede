@@ -22,7 +22,7 @@
     <font style="font-family: kb">MECHANICAL KEYBOARDS</font> and computers.<br />
     <div style="display: flex; justify-content: center; align-items: center">
       <div class="stacked">I enjoy playing volleyball</div>
-      <img src="/vb.png" style="width: 2ch; height: 2ch; margin: 0" />
+      <img src="icons//vb.png" style="width: 2ch; height: 2ch; margin: 0" />
       <div class="stacked">, Genshin Impact and Minecraft</div>
     </div>
 
@@ -37,7 +37,7 @@
     <div class="www">
       <div class="stacked">
         Python<img
-          src="icons/py.png"
+          src="icons//py.png"
           style="width: 2ch; margin: 0; align-self: center"
         />
       </div>
@@ -61,6 +61,7 @@
       </div>
     </div>
   </div>
+  <img src="assets//stacked.svg" style="width: 100vw; margin: 0" />
   <div
     id=""
     style="
@@ -142,11 +143,12 @@ methods:{
 
 #intro {
   text-align: center;
-  font-size: 2rem;
+  font-size: 4ch;
   font-family: "Josefin Sans", sans-serif;
   word-wrap: break-word;
   max-width: 100vw;
   padding: 2ch;
+  padding-top: 0;
 }
 body {
   margin: 0;
