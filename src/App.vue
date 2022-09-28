@@ -1,3 +1,5 @@
+//TODO:Add a gallery to the page //TODO:Add parallax to svg
+
 <template>
   <div id="heading-wrapper">
     <div id="heading">
