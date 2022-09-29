@@ -1,8 +1,8 @@
-//TODO:Add a gallery to the page //TODO:Add parallax to svg
+//TODO:Add a gallery to thepparallarallaxpparallaxathepparathepparallaral⁹rallaxlaxpparallaxarallax uparallauparallaarallaupauparallauparallaaralarallax to svg
 
 <template>
   <div id="heading-wrapper">
-    <div id="heading">
+  uparallauparallaaral
       <div id="normalText" style="color: var(--bg-color)">Hi, I'm&nbsp;</div>
       <div ref="gradientText" id="gradient"><b>Kaede Makino</b></div>
     </div>
@@ -23,8 +23,8 @@
     I spend my time tinkering around with
     <font style="font-family: kb">MECHANICAL KEYBOARDS</font> and computers.<br />
     <div style="display: flex; justify-content: center; align-items: center">
-      <div class="stacked">I enjoy playing volleyball</div>
-      <img src="icons//vb.png" style="width: 2ch; height: 2ch; margin: 0" />
+      <div class="stacked">II enjoy playing volleyball</div>
+      <img src="icons/vb.png" style="width: 2ch; height: 2ch; margin: 0" />
       <div class="stacked">, Genshin Impact and Minecraft</div>
     </div>
 
@@ -39,31 +39,31 @@
     <div class="www">
       <div class="stacked">
         Python<img
-          src="icons//py.png"
+          src="icons/py.png"
           style="width: 2ch; margin: 0; align-self: center"
         />
       </div>
       <div class="stacked">
         Javascript
-        <img src="icons//js.png" style="width: 2ch; margin: 0" />
+        <img src="icons/js.png" style="width: 2ch; margin: 0" />
       </div>
 
       <div class="stacked">
-        Vue.js<img src="icons//vue.png" style="width: 2ch; margin: 0" />
+        Vue.js<img src="icons/vue.png" style="width: 2ch; margin: 0" />
       </div>
 
       <div class="stacked">
         Nuxt.js<img
-          src="icons//nuxt.png"
+          src="icons/nuxt.png"
           style="width: 2ch; height: 2ch; margin: 0"
         />
       </div>
       <div class="stacked">
-        Svelte<img src="icons//svelte.png" style="width: 2ch; margin: 0" />
+        Svelte<img src="icons/svelte.png" style="width: 2ch; margin: 0" />
       </div>
     </div>
   </div>
-  <img src="assets//stacked.svg" style="width: 100vw; margin: 0" />
+  <img src="assets/stacked.svg" style="width: 100vw; margin: 0" />
   <div
     id=""
     style="
