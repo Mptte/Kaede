@@ -1,8 +1,8 @@
-//TODO:Add a gallery to thepparallarallaxpparallaxathepparathepparallaral⁹rallaxlaxpparallaxarallax uparallauparallaarallaupauparallauparallaaralarallax to svg
+
 
 <template>
   <div id="heading-wrapper">
-  uparallauparallaaral
+    <div id="heading">
       <div id="normalText" style="color: var(--bg-color)">Hi, I'm&nbsp;</div>
       <div ref="gradientText" id="gradient"><b>Kaede Makino</b></div>
     </div>
@@ -23,7 +23,7 @@
     I spend my time tinkering around with
     <font style="font-family: kb">MECHANICAL KEYBOARDS</font> and computers.<br />
     <div style="display: flex; justify-content: center; align-items: center">
-      <div class="stacked">II enjoy playing volleyball</div>
+      <div class="stacked">I enjoy playing volleyball</div>
       <img src="icons/vb.png" style="width: 2ch; height: 2ch; margin: 0" />
       <div class="stacked">, Genshin Impact and Minecraft</div>
     </div>
